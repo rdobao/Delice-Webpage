@@ -1,0 +1,28 @@
+.contacto-seccion {
+    display: flex;
+    justify-content:center;
+    flex-direction: row;
+}
+
+.direccion {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 100px;
+    p {
+        padding: 10px 0;
+        font-size: 1rem;
+
+    } 
+    iframe {
+        padding: 10px 0;
+        font-size: 1rem;
+    }
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}

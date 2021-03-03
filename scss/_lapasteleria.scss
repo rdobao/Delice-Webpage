@@ -1,0 +1,15 @@
+.galeria {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    margin: 30px 0;
+}
+
+.imagen-pasteleria {
+    width: 400px;
+    height: 600px;
+    object-fit: cover;
+    margin: 0 10px;
+}
