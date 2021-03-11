@@ -50,10 +50,6 @@ header nav {
   width: 100%;
 }
 
-.bg-dark {
-  background-color: black !important;
-}
-
 header nav a {
   font-family: "Montserrat-Regular";
   text-decoration: none;
@@ -62,19 +58,16 @@ header nav a {
   color: white;
   margin: 0px 20px 0px 20px;
 }
+
 header nav.navbar-dark .navbar-nav .nav-link.active {
   color: gold;
 }
 
-.bg-dark {
-  background-color: black !important;
-}
-
-.navbar-dark .navbar-toggler {
+header .navbar-dark .navbar-toggler {
   border: none;
 }
 
-.navbar-toggler:focus {
+header .navbar-toggler:focus {
   box-shadow: none;
 }
 
@@ -276,17 +269,17 @@ header nav.navbar-dark .navbar-nav .nav-link.active {
   flex-direction: row;
 }
 
-.direccion {
+.contacto-seccion .direccion {
   display: flex;
   justify-content: center;
   flex-direction: column;
   margin-right: 100px;
 }
-.direccion p {
+.contacto-seccion .direccion p {
   padding: 10px 0;
   font-size: 1rem;
 }
-.direccion iframe {
+.contacto-seccion .direccion iframe {
   padding: 10px 0;
   font-size: 1rem;
 }
@@ -308,7 +301,7 @@ header nav.navbar-dark .navbar-nav .nav-link.active {
   color: #ffff;
 }
 
-@media only screen and (min-width: 401px) and (max-width: 960px) {
+@media only screen and (min-width: 481px) and (max-width: 960px) {
   .menu-container {
     display: none;
   }
@@ -367,8 +360,12 @@ header nav.navbar-dark .navbar-nav .nav-link.active {
     flex-direction: column;
   }
 
-  .mapa {
-    width: 300px;
+  .contacto-seccion .direccion {
+    margin-right: 0px;
+  }
+
+  .contacto-seccion .mapa {
+    width: 100%;
     height: auto;
   }
 
@@ -378,13 +375,23 @@ header nav.navbar-dark .navbar-nav .nav-link.active {
   }
 
   .slick-slide img {
-    width: 300px;
-    height: 300px;
+    width: 320px;
+    height: 320px;
     object-fit: cover;
   }
 }
 /* Mobile */
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 480px) {
+
+  header nav {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  header nav .fixed-top {
+    z-index: 9999;
+  }
+
   .menu-container {
     display: none;
   }
@@ -456,14 +463,14 @@ header nav.navbar-dark .navbar-nav .nav-link.active {
   }
 
   .imagen {
-    width: 300px;
-    height: 300px;
+    width: 320px;
+    height: 320px;
     object-fit: cover;
     margin: 10px 0;
   }
 
   .imagen-pasteleria {
-    width: 300px;
+    width: 320px;
     height: 400px;
     object-fit: cover;
     margin: 10px 0;
@@ -473,21 +480,24 @@ header nav.navbar-dark .navbar-nav .nav-link.active {
     flex-direction: column;
   }
 
-  .mapa {
-    width: 300px;
-    height: auto;
+  .contacto-seccion .direccion {
+      margin-right: 0px;
+  }
+
+  .contacto-seccion .mapa {
+      width: 100%;
+      height: auto;
   }
 
   /*Carousel*/
   .slick-slide img {
-    width: 300px;
-    height: 300px;
+    width: 320px;
+    height: 320px;
     object-fit: cover;
   }
 
   .container {
     width: 90%;
-    max-width: 100%;
   }
 }
 
