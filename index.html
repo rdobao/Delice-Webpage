@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Pastelería francesa de excelencia. Desde 2010 dando un toque distintivo y único a tus eventos">
     <!--Favicon proximamente-->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-        <meta name="keywords" content="pastelería, tortas, postres, cakes, pasteles, francesa, dulce, desserts, chocolate">
+    <link rel="shortcut icon" href="imagenes/favicon.svg" type="image/x-icon">
+    <meta name="keywords" content="pastelería, tortas, postres, cakes, pasteles, francesa, dulce, desserts, chocolate">
     <meta name="author" content="Rebeca Dobao">
     <meta name="copyright" content="Delicé Pastelería">
     <meta property="og:title" content="Delice-Pasteleria">
@@ -31,32 +31,46 @@
     <header>
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse justify-content-end" id="navbarMenu">
-                <div class="navbar-nav">
-                    <a class="nav-link active" href="#inicio">Inicio</a>
-                    <a class="nav-link" href="#nosotros">Nosotros</a>
-                    <a class="nav-link" href="#servicios">Servicios</a>
-                    <a class="nav-link" href="#lapasteleria">La pastelería</a>
-                    <a class="nav-link" href="#contacto">Contacto</a>
+                <a class="navbar-brand" href="#">
+                    <h1>Delicé</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <div id="navbar-open">
+                        <span class="navbar-toggler-icon"></span>
+                    </div>
+                    <div id="navbar-close" class="d-none">
+                        <span class="fas fa-times"></span>
+                        
+                    </div>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarMenu">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" href="#inicio">Inicio</a>
+                        <a class="nav-link" href="#nosotros">Nosotros</a>
+                        <a class="nav-link" href="#servicios">Servicios</a>
+                        <a class="nav-link" href="#lapasteleria">La pastelería</a>
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                        <div class="nav-link" href="#">
+                            <div class="redes-sociales">
+                                <a title="Instagram" href="https://instagram.com" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a title="Facebook" href="https://facebook.com" target="_blank">
+                                    <i class="fab fa-facebook"></i>
+                                </a>                                
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </nav>    
+        </nav>    
     </header>    
     <div class="container-fluid">
         <section class="row" id="inicio">
-            <div class="inicio col-12">
-                <h1 style="display: none;">Delicé</h1>
-                <img class="img-fluid portada" src="imagenes/portada.jpg" alt="pastel pasión de chocolate">
-                <img class="img-fluid portada-mobile" src="imagenes/torta2.jpg" alt="pastel pasión de chocolate">
-                <div class="redes-sociales">
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-facebook"></i>
-                </div>
+            <div class="inicio-section col-12">
+                <img class="logo" src="./imagenes/logo.svg" alt="Logo de la empresa">
+                <img class="img-fluid portada d-none d-sm-block" src="imagenes/portada.jpg" alt="pastel pasión de chocolate">
+                <img class="img-fluid portada-mobile d-block d-sm-none" src="imagenes/torta2.jpg" alt="pastel pasión de chocolate">
             </div>
         </section>
         <section id="nosotros">
@@ -66,10 +80,10 @@
                 </div>
             </div>
             <div class="row nosotros-seccion">
-                <div class="col-12 col-lg-6 col-md-6 d-flex">
+                <div class="col-12 col-lg-6">
                     <img class="foto-nosotros img-fluid wow fadeInLeft delay-0.5s" src="imagenes/pareja.jpg" alt="Ana y Juan en la cocina de la pastelería">
                 </div>
-                <div class="col-12 col-md-6 mt-3 d-flex align-items-center">
+                <div class="col-12 col-lg-6 mt-3 d-flex align-items-center">
                     <p class="parrafo-nosotros wow fadeInRight delay-0.5s">
                         Gummies tart brownie apple pie jelly dragée gingerbread pie liquorice. Chocolate bar chupa chups candy marshmallow oat cake sesame snaps chocolate cake chocolate. Jelly beans dessert biscuit donut cupcake muffin chocolate croissant.
                         Powder marzipan sweet roll fruitcake lemon drops carrot cake gingerbread chocolate cake donut. Cotton candy gummies lemon drops caramels ice cream marzipan. Ice cream chocolate bar gummi bears sweet roll. Jelly-o muffin sugar plum chocolate.
@@ -85,7 +99,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 offset-md-2 col-md-8 justify-content-center wow fadeInLeft delay-0.5s">
+                <div class="col-12 offset-lg-2 col-lg-8 justify-content-center wow fadeInLeft delay-0.5s">
                     <p>
                         Cake tart tiramisu pie tootsie roll muffin marshmallow bonbon lemon drops. Cotton candy tiramisu cookie pie cotton candy. Marzipan tart macaroon icing gummies toffee marzipan apple pie bonbon. Oat cake lollipop chocolate cake muffin tart pudding chupa chups apple pie carrot cake.
                         Jujubes fruitcake macaroon marzipan cookie brownie chocolate ice cream. Gummies bear claw oat cake bonbon bear claw cheesecake apple pie. Chocolate ice cream tiramisu topping. Jujubes soufflé candy canes. 
@@ -97,65 +111,82 @@
                     <h3>Catering para eventos</h3>
                 </div>
             </div>            
-            <div class="container">
-                <div class="slider-container">
-                    <div class="slide d-flex">
-                        <a href="./imagenes/catering1.jpg" title="Mini pasteles" class="fullsize"><img class="thumbnail" alt="Mini pasteles de varios sabores" src="./imagenes/thumbnailcatering1.jpg"></a>
+            <div class="container-fluid">
+                <div class="slider-container col-12">
+                    <div class="slide">
+                        <a href="./imagenes/catering1.jpg" title="Mini pasteles" class="fullsize">
+                            <img class="img-fluid" alt="Mini pasteles de varios sabores" src="./imagenes/thumbnailcatering1.jpg">
+                        </a>
                     </div>
-                    <div class="slide d-flex">
-                        <a href="./imagenes/catering2.jpg" title="Cupcakes Fraise" class="fullsize"><img class="thumbnail" alt="Cupcake de vainilla con relleno de mermelada y cobertura de crema chantilly con frutilla" src="./imagenes/thumbnailcatering2.jpg"></a>
+                    <div class="slide">
+                        <a href="./imagenes/catering2.jpg" title="Cupcakes Fraise" class="fullsize">
+                            <img class="img-fluid" alt="Cupcake de vainilla con relleno de mermelada y cobertura de crema chantilly con frutilla" src="./imagenes/thumbnailcatering2.jpg">
+                        </a>
                     </div>
-                    <div class="slide d-flex">
-                        <a href="./imagenes/catering3.jpg" title="Mousse delicate" class="fullsize"><img class="thumbnail" alt="Postre de mousse de chocolate blanco y frutos rojos decorado con frutillas" src="./imagenes/thumbnailcatering3.jpg"></a>
+                    <div class="slide">
+                        <a href="./imagenes/catering3.jpg" title="Mousse delicate" class="fullsize">
+                            <img class="img-fluid" alt="Postre de mousse de chocolate blanco y frutos rojos decorado con frutillas" src="./imagenes/thumbnailcatering3.jpg">
+                        </a>
                     </div>
-                    <div class="slide d-flex">
-                        <a href="./imagenes/catering4.jpg" title="Tiramisú de frutos rojos" class="fullsize"><img class="thumbnail" alt="Copitas de frutos rojos con crema italiana y bizcochuelo de vainilla" src="./imagenes/thumbnailcatering4.jpg"></a>
+                    <div class="slide">
+                        <a href="./imagenes/catering4.jpg" title="Tiramisú de frutos rojos" class="fullsize">
+                            <img class="img-fluid" alt="Copitas de frutos rojos con crema italiana y bizcochuelo de vainilla" src="./imagenes/thumbnailcatering4.jpg">
+                        </a>
                     </div>
-                    <div class="slide d-flex">
-                        <a href="./imagenes/catering5.jpg" title="Frambuesa pasión" class="fullsize"><img class="thumbnail" alt="Souffle de frambuesa decorado con crema y frambuesas silvestres " src="./imagenes/thumbnailcatering5.jpg"></a>
+                    <div class="slide">
+                        <a href="./imagenes/catering5.jpg" title="Frambuesa pasión" class="fullsize">
+                            <img class="img-fluid" alt="Souffle de frambuesa decorado con crema y frambuesas silvestres " src="./imagenes/thumbnailcatering5.jpg">
+                        </a>
                     </div>
-                    <div class="slide d-flex">
-                        <a href="./imagenes/catering6.jpg" title="Sweet chocolate" class="fullsize"><img class="thumbnail" alt="Postre de chocolate pink, copas de mousse de chocolate blanco y copas souffle de chocolate negro" src="./imagenes/thumbnailcatering6.jpg"></a>
+                    <div class="slide">
+                        <a href="./imagenes/catering6.jpg" title="Sweet chocolate" class="fullsize">
+                            <img class="img-fluid" alt="Postre de chocolate pink, copas de mousse de chocolate blanco y copas souffle de chocolate negro" src="./imagenes/thumbnailcatering6.jpg">
+                        </a>
                     </div>
-                    <div class="slide d-flex">
-                        <a href="./imagenes/catering7.jpg" title="Maracuyá delicaté" class="fullsize"><img class="thumbnail" alt="Panna cotta de maracuya" src="./imagenes/thumbnailcatering7.jpg"></a>
+                    <div class="slide">
+                        <a href="./imagenes/catering7.jpg" title="Maracuyá delicaté" class="fullsize">
+                            <img class="img-fluid" alt="Panna cotta de maracuya" src="./imagenes/thumbnailcatering7.jpg">
+                        </a>
                     </div>
-                    <div class="slide d-flex">
-                        <a href="./imagenes/catering8.jpg" title="Cakesicles Bleu Clair" class="fullsize"><img class="thumbnail" alt="Paletas de bizcochuelo de vainilla con baño de chocolate blanco" src="./imagenes/thumbnailcatering8.jpg"></a>
+                    <div class="slide">
+                        <a href="./imagenes/catering8.jpg" title="Cakesicles Bleu Clair" class="fullsize">
+                            <img class="img-fluid" alt="Paletas de bizcochuelo de vainilla con baño de chocolate blanco" src="./imagenes/thumbnailcatering8.jpg">
+                        </a>
                     </div>
                 </div>
             </div>
-
             <div class="row">
                 <div class="col-12 justify-content-start">
                     <h3>Pasteles para bodas</h3>
                 </div>
             </div>            
-            <div class="container">
-                <div class="slider-container">
-                    <div class="slide d-flex">
-                        <a href="./imagenes/pastel1.jpg" title="Pastel Paris" class="fullsize"><img class="thumbnail" alt="Pastel rosado de cuatro pisos decorado con peonias" src="./imagenes/thumbnailpastel1.jpg"></a>
+            <div class="container-fluid">
+                <div class="slider-container col-12">
+                    <div class="slide">
+                        <a href="./imagenes/pastel1.jpg" title="Pastel Paris" class="fullsize">
+                            <img class="img-fluid" alt="Pastel rosado de cuatro pisos decorado con peonias" src="./imagenes/thumbnailpastel1.jpg">
+                        </a>
                     </div>
-                    <div class="slide d-flex">
-                        <a href="./imagenes/pastel2.jpg" title="Pastel Roma" class="fullsize"><img class="thumbnail" alt="Pastel de una pieza decorado con rosas" src="./imagenes/thumbnailpastel2.jpg"></a>
+                    <div class="slide">
+                        <a href="./imagenes/pastel2.jpg" title="Pastel Roma" class="fullsize"><img class="img-fluid" alt="Pastel de una pieza decorado con rosas" src="./imagenes/thumbnailpastel2.jpg"></a>
                     </div>
-                    <div class="slide d-flex">
-                        <a href="./imagenes/pastel3.jpg" title="Pastel Alabama" class="fullsize"><img class="thumbnail" alt="Pastel rústico de dos pisos decorado con lirios" src="./imagenes/thumbnailpastel3.jpg"></a>
+                    <div class="slide">
+                        <a href="./imagenes/pastel3.jpg" title="Pastel Alabama" class="fullsize"><img class="img-fluid" alt="Pastel rústico de dos pisos decorado con lirios" src="./imagenes/thumbnailpastel3.jpg"></a>
                     </div>
-                    <div class="slide d-flex">
-                        <a href="./imagenes/pastel4.jpg" title="Pastel Venecia" class="fullsize"><img class="thumbnail" alt="Pastel de dos pisos decorado con rosas" src="./imagenes/thumbnailpastel4.jpg"></a>
+                    <div class="slide">
+                        <a href="./imagenes/pastel4.jpg" title="Pastel Venecia" class="fullsize"><img class="img-fluid" alt="Pastel de dos pisos decorado con rosas" src="./imagenes/thumbnailpastel4.jpg"></a>
                     </div>
-                    <div class="slide d-flex">
-                        <a href="./imagenes/pastel5.jpg" title="Pastel Praga" class="fullsize"><img class="thumbnail" alt="Pastel de tres pisos decorado con rosas y detalles de tiaras doradas" src="./imagenes/thumbnailpastel5.jpg"></a>
+                    <div class="slide">
+                        <a href="./imagenes/pastel5.jpg" title="Pastel Praga" class="fullsize"><img class="img-fluid" alt="Pastel de tres pisos decorado con rosas y detalles de tiaras doradas" src="./imagenes/thumbnailpastel5.jpg"></a>
                     </div>
-                    <div class="slide d-flex">
-                        <a href="./imagenes/pastel6.jpg" title="Pastel Nashville" class="fullsize"><img class="thumbnail" alt="Pastel rústico decorado con flores silvestres y letrero de Mr y Mrs en la parte superior" src="./imagenes/thumbnailpastel6.jpg"></a>
+                    <div class="slide">
+                        <a href="./imagenes/pastel6.jpg" title="Pastel Nashville" class="fullsize"><img class="img-fluid" alt="Pastel rústico decorado con flores silvestres y letrero de Mr y Mrs en la parte superior" src="./imagenes/thumbnailpastel6.jpg"></a>
                     </div>
-                    <div class="slide d-flex">
-                        <a href="./imagenes/pastel7.jpg" title="Pastel Bali" class="fullsize"><img class="thumbnail" alt="Pastel de cuatro pisos decorado con frutas tropicales" src="./imagenes/thumbnailpastel7.jpg"></a>
+                    <div class="slide">
+                        <a href="./imagenes/pastel7.jpg" title="Pastel Bali" class="fullsize"><img class="img-fluid" alt="Pastel de cuatro pisos decorado con frutas tropicales" src="./imagenes/thumbnailpastel7.jpg"></a>
                     </div>
-                    <div class="slide d-flex">
-                        <a href="./imagenes/pastel8.jpg" title="Pastel London" class="fullsize"><img class="thumbnail" alt="Pastel rosado de tres pisos con decoración de rosas y detalles en dorado" src="./imagenes/thumbnailpastel8.jpg"></a>
+                    <div class="slide">
+                        <a href="./imagenes/pastel8.jpg" title="Pastel London" class="fullsize"><img class="img-fluid" alt="Pastel rosado de tres pisos con decoración de rosas y detalles en dorado" src="./imagenes/thumbnailpastel8.jpg"></a>
                     </div>
                 </div>
             </div>
@@ -176,9 +207,9 @@
             </div>
             <div class="row">
                 <div class="col-12 d-flex justify-content-center galeria">
-                    <img class="imagen-pasteleria wow fadeInLeft" src="imagenes/lapasteleria1.jpg" alt="Vitrina con mini cakes y tartas varias">
-                    <img class="imagen-pasteleria wow fadeIn delay-1s" src="imagenes/lapasteleria2.jpg" alt="vitrina con tortas y postres de Halloween">
-                    <img class="imagen-pasteleria wow fadeInRight" src="imagenes/lapasteleria3.jpg" alt="Empleada frente al mostrador de postres">
+                    <img class="imagen-pasteleria img-fluid wow fadeInLeft" src="imagenes/lapasteleria1.jpg" alt="Vitrina con mini cakes y tartas varias">
+                    <img class="imagen-pasteleria img-fluid wow fadeIn delay-1s" src="imagenes/lapasteleria2.jpg" alt="vitrina con tortas y postres de Halloween">
+                    <img class="imagen-pasteleria img-fluid wow fadeInRight" src="imagenes/lapasteleria3.jpg" alt="Empleada frente al mostrador de postres">
                 </div>
             </div>
         </section>
@@ -188,36 +219,44 @@
                     <h2>Contacto</h2>
                 </div>
             </div>
-            <div class="contacto-seccion">
-                <div class="direccion">
-                    <p>Dirección: La La Land 1234, País de Nunca Jamás</p>
-                    <p>Teléfono: 0303 456</p>
+            <div class="contacto-seccion row">
+                <div class="direccion col-12 offset-lg-1 col-lg-5">
+                    <p>
+                        <i class="fas fa-map-marker-alt"></i> Dirección: La La Land 1234, Paí­s de Nunca Jamás
+                    </p>
+                    <p>
+                        <i class="fas fa-phone-alt"></i> <a href="tel:0303456"> Teléfono: 0303 456 </a>
+                    </p>
                     <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d333356.0233327124!2d69.86804455136557!3d-49.25092669931035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb314c6ff568c4207%3A0x49a453fad2d1135b!2sCourbet%20Peninsula!5e0!3m2!1ses-419!2sar!4v1612495253316!5m2!1ses-419!2sar" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
-                <div class="formulario">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" name="nombre" id="txt-nombre">
-                    <br>
-                    <label for="email">Email</label>
-                    <input type="text" name="email" id="txt-email">
-                    <br>
-                    <label for="asunto">Asunto</label>
-                    <input type="text" name="asunto" id="txt-asunto">
-                    <br>
-                    <label for="consulta">Consulta</label>
-                    <br>
-                    <textarea name="text-consulta" id="text-consulta" cols="30" rows="10"></textarea>
-                    <br>
-                    <input type="submit" value="Enviar">
+                <div class="formulario col-12 offset-lg-1 col-lg-4">
+                    <form name="form-contacto" id="form-contacto">
+                        <div class="form__group field">
+                            <input type="input" class="form__field" placeholder="Nombre" name="nombre" id='nombre' required />
+                            <label for="nombre" class="form__label">Nombre</label>
+                        </div>
+                        <div class="form__group field">
+                            <input type="email" class="form__field" placeholder="Email" name="email" id='email' required />
+                            <label for="email" class="form__label">Email</label>
+                        </div>
+                        <div class="form__group field">
+                            <textarea class="form__field" placeholder="Mensaje" name="message" id="message" cols="30" rows="5"></textarea>
+                            <label for="message" class="form__label">Mensaje</label>
+                        </div>
+                        <div class="form__group field">
+                            <input type="submit" value="Enviar">
+                        </div>
+                    </form>
                 </div>
             </div>
         </section>
+
     </div>
     <footer>
         <div class="footer">
             <p>Creada por 
             <a href="www.rebeca.com">
-                Rebeca Dobao
+                Rebeca Dobao <span class="corazon">♥</span>
             </a>        
             </p>
         </div>
@@ -231,6 +270,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
     <!--Lightbox-->
     <script src="https://mreq.github.io/slick-lightbox/dist/slick-lightbox.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
 
     <script>
     new WOW().init();
@@ -251,7 +291,7 @@
                 autoplaySpeed: 5000,
                 variableWidth: true,
                 arrows: true,
-                dots: true,
+                dots: false,
                 prevArrow:'<button type="button" class="slick-prev"></button>',
                 nextArrow:'<button type="button" class="slick-next"></button>',
                 pauseOnHover: true,
@@ -261,6 +301,70 @@
                 itemSelector        : 'a',
                 navigateByKeyboard  : true
             });
+
+            $("#form-contacto").validate({
+                focusCleanup: true,
+                rules: {
+                    nombre: {
+                        required: true
+                    },
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    message: {
+                        required: true,
+                        minlength: 5,
+                        maxlength: 30,
+                    }
+                },
+                messages: {
+                    nombre: {
+                        required: "* Campo requerido."
+                    },
+                    email: {
+                        required: "* Campo requerido.",
+                        email: "* Ingrese un email válido."
+                    },
+                    message: "* Campo requerido."
+                }
+            });
+
+            $("#form-contacto").on('submit', function(e) {
+                var isvalid = $("#form-contacto").valid();
+                if (isvalid) {
+                    e.preventDefault();
+                    $(".formulario").empty().addClass('text-center').append(`
+                        <h3>Mensaje Enviado</h3>
+                        <p>Nos comunicaremos a la brevedad con usted. Gracias!</p>
+                    `);
+                }
+            });
+
+            $(".navbar-nav").on("click", function(){
+                $(".navbar-toggler").click();
+            });
+
+            $('.navbar-toggler').click(function() {
+                $('#navbar-open').toggleClass('d-none');
+                $('#navbar-close').toggleClass('d-none');  
+            });
+        });
+
+        $(window).scroll(function (event) {
+            var offset = $(window).scrollTop();
+            $(".nav-link").each(function( index ) {
+                var elemento = $( this ).attr("href");
+                if (elemento != "#") {
+                    var posicion = $(elemento).offset().top;
+                    var alto = posicion + $( elemento ).height(); 
+                    if (offset >= posicion && offset <= alto)
+                    {
+                        $('.nav-link.active').removeClass('active');
+                        $(this).addClass('active');
+                    }
+                }
+            })
         });
     </script>
 </body>

@@ -1,28 +1,130 @@
 .contacto-seccion {
-    display: flex;
-    justify-content:center;
-    flex-direction: row;
-}
-
-.direccion {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-right: 100px;
-    p {
-        padding: 10px 0;
-        font-size: 1rem;
-
-    } 
-    iframe {
-        padding: 10px 0;
-        font-size: 1rem;
+    .direccion {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        p {
+            padding: 10px 0;
+            font-size: 1rem;
+            a {
+                color: #fff;
+                text-decoration: none;
+            }
+    
+        } 
+        iframe {
+            padding: 10px 0;
+            font-size: 1rem;
+        }
+        i {
+            &.fas {
+                color: gold;
+                font-size: 20px;
+            }
+        }
+    }
+    .formulario {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        .form__group {
+            position: relative;
+            padding: 15px 0 0;
+            margin-top: 10px;
+            #nombre-error,
+            #email-error,
+            #message-error {
+                font-size: 14px;
+                display: block;
+                color: red;
+                margin-top: 10px;
+            }
+            .form__field {
+                font-family: inherit;
+                width: 100%;
+                border: 0;
+                border-bottom: 2px solid #9b9b9b;
+                outline: 0;
+                font-size: 1.3rem;
+                color: #FFF;
+                padding: 7px 0;
+                background: transparent;
+                transition: border-color 0.2s;
+                &::placeholder {
+                    color: transparent;
+                }
+                &:placeholder-shown ~ .form__label {
+                    font-size: 1.3rem;
+                    cursor: text;
+                    top: 20px;
+                }
+            }
+            
+            .form__label {
+              position: absolute;
+              top: 0;
+              display: block;
+              transition: 0.2s;
+              font-size: 1rem;
+              color: #9b9b9b;
+            }
+            
+            .form__field:focus {
+              ~ .form__label {
+                position: absolute;
+                top: 0;
+                display: block;
+                transition: 0.2s;
+                font-size: 1rem;
+                color: #dbbb04;
+                font-weight:700;    
+              }
+              padding-bottom: 6px;  
+              font-weight: 700;
+              border-width: 3px;
+              border-image: linear-gradient(to right, #dbbb04,#ffd700);
+              border-image-slice: 1;
+            }
+            /* reset input */
+            .form__field{
+              &:required,&:invalid { box-shadow:none; }
+            }
+            textarea {
+                resize: none;
+            }
+            input[type=submit] {
+                width: 100%;
+                color: #FFF;
+                background-color:transparent;
+                text-transform: uppercase;
+                padding: 7px 0;
+                border: 1px solid gold;
+                border-radius: 40px 10px;
+                &:hover {
+                    box-shadow: 1px 1px 25px 10px rgba(248, 238, 146, 0.1);
+                }
+            }
+          }
     }
 }
 
-.formulario {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    
+@media only screen and (max-width: 991px) {
+    .contacto-seccion {
+        flex-direction: column;
+        .direccion {
+            margin-right: 0px;
+        }
+       .mapa {
+            width: 100%;
+            height: auto;
+        }
+        .formulario {
+            .form__group {
+                padding: 30px 0 0;
+            }
+        }
+    }
 }
+
+
+
