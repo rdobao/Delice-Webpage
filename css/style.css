@@ -214,21 +214,10 @@ section#inicio .inicio-section .logo {
 
 section#inicio .inicio-section .portada {
   width: 100%;
-  height: auto;
-  top: 0px;
-  z-index: 1;
-}
-
-@media only screen and (min-width: 481px) and (max-width: 991px) {
-  section#inicio .inicio-section .portada {
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
-    -o-object-fit: cover;
-       object-fit: cover;
-    top: 0px;
-    z-index: 1;
-  }
+  height: 900px;
+  background-size: cover;
+  background: url(../imagenes/portada.jpg);
+  background-position: center center;
 }
 
 @media only screen and (max-width: 480px) {
@@ -237,15 +226,10 @@ section#inicio .inicio-section .portada {
     left: calc(50% - 110px);
     top: 90px;
   }
-  section#inicio .inicio-section .portada-mobile {
-    display: initial;
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
-    -o-object-fit: cover;
-       object-fit: cover;
-    top: 0px;
-    z-index: 1;
+  section#inicio .inicio-section .portada {
+    height: 750px;
+    background: url(../imagenes/torta2.jpg);
+    background-position: center 25px;
   }
   section#inicio .inicio-section .redes-sociales {
     position: relative;

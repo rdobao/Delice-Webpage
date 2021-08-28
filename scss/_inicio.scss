@@ -10,22 +10,11 @@ section#inicio {
             left: calc(50% - 160px);
         }
         .portada {
-            width: 100%; 
-            height: auto;
-            top: 0px;
-            z-index: 1;
-        }
-    }
-}
-@media only screen and (min-width: 481px) and (max-width: 991px) {
-    section#inicio {
-        .inicio-section {
-            .portada {
-                height: max-content;
-                object-fit: cover;
-                top: 0px;
-                z-index: 1;
-            }
+            width: 100%;
+            height: 900px;
+            background-size: cover;
+            background: url(../imagenes/portada.jpg);
+            background-position: center center;
         }
     }
 }
@@ -38,13 +27,11 @@ section#inicio {
                 left: calc(50% - 110px);
                 top: 90px;
             }
-            .portada-mobile
+            .portada
             {
-                display: initial;
-                height: max-content;
-                object-fit: cover;
-                top: 0px;
-                z-index: 1;
+                height: 750px;
+                background: url(../imagenes/torta2.jpg);
+                background-position: center 25px;               
             }
             .redes-sociales{
                 position: relative;
