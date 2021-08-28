@@ -1,5 +1,6 @@
 
 # Delice Pasteleria
 
-Proyecto correspondiente al curso desarrollo web dictado por CoderHouse
+Proyecto correspondiente al curso Desarrollo Web dictado por CoderHouse.
+https://rdobao.github.io/Delice-Webpage/
 
